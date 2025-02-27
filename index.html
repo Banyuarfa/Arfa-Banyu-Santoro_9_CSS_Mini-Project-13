@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 13</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h3>
+        <i class="fa-solid fa-code" style="color: #73c2fb"></i>Arfa Banyu
+        Santoro
+      </h3>
+      <nav>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#conclusion">Conslusion</a></li>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="image">
+        <img src="../assets/blob-hero.svg" alt="blob-hero" /><img
+          src="../assets/hero.jpeg"
+          alt="hero"
+        />
+      </div>
+      <div class="text">
+        <h1>Fitur <span>Timestamp</span> - Project Caraka</h1>
+        <p>Fitur yang akan memberikan kemudahan dalam melacak absen caraka.</p>
+        <a href="#">Pelajari Lebih Lanjut</a>
+      </div>
+    </section>
+
+    <section id="introduction">
+      <h1>Apa itu <span>Timestamp</span>?</h1>
+      <div class="definition">
+        <img src="../assets/time location.png" alt="Time Location" />
+        <p>
+          <span>Timestamp</span> adalah fitur yang mampu melacak lokasi alamat
+          dan tanggal waktu saat user melakukan foto yang diprogram meggunakan
+          library <span>React</span> yang ditampung pada komponen
+          PhotoCapture.jsx. <br /><br />Setelah user melakukan foto, timestamp
+          tersebut akan dirender di tempat yang sudah ditentukan di dalam foto
+          user.Hasilnya, foto user akan memiliki timestamp yang berguna untuk
+          mengetahui lokasi dan waktu foto user. Berikut adalah dokumentasi
+          fitur timestamp yang telah saya buat untuk kebutuhan tugas DPK.
+        </p>
+      </div>
+      <h1>Cara Penggunaan fitur <span>Timestamp</span></h1>
+      <div class="how-to-use">
+        <h3>
+          Di bawah ini merupakan tampilan awal dari fitur
+          <span>Timestamp</span>.
+        </h3>
+        <img src="../assets/1.png" alt="1" />
+        <h3>Pertama, Klik tombol Ambil foto.</h3>
+        <img src="../assets/1.png" alt="1" />
+        <h3>Setelah ambil foto, klik tombol lihat.</h3>
+        <img src="../assets/2.png" alt="2" />
+        <h3>
+          Hasil akhir foto akan terlihat seperti pada gambar di bawah ini.
+        </h3>
+        <img src="../assets/3.png" alt="3" />
+      </div>
+    </section>
+    <section id="description">
+      <div class="container">
+        <h1>Deskripsi</h1>
+        <p>
+          Berikutnya, saya akan menjelaskan fungsi-funsi yang ada pada fitur
+          <span>Timestamp</span>. Di bawah ini terdapat component-component
+          serta funsi-fungsi fitur <span>Timestamp</span>:
+        </p>
+        <div class="part one">
+          <img src="../assets/handlePhotoCapture.png" alt="" />
+          <div class="text">
+            <h1>handlePhotoCapture()</h1>
+            <p>
+              handlePhotoCapture() merupakan salah satu fungsi yang ada pada
+              komponen PhotoCapture.jsx yang berfungsi untuk membaca file yang
+              masuk dari hasil jepretan foto user. Ketika file sedang di load,
+              maka akan menjalankan showCapturePhoto().
+            </p>
+          </div>
+        </div>
+        <div class="part two">
+          <div class="text">
+            <h1>showCapturePhoto()</h1>
+            <p>
+              showCapturePhoto() merupakan fungsi yang berfungsi untuk
+              menampilkan photo Timestamp pada layar dan sekaligus membuatkan
+              photo urlnya agar photo yang sudah terdapat
+              <span>Timestamp</span>nya bisa didownload. Tapi sebelum
+              ditampilkan, fungsi ini akan merender <span>Timestamp</span>nya
+              terlebih dahulu ketika photo sedang di load.
+            </p>
+          </div>
+          <img src="../assets/showCapturePhoto.png" alt="" />
+        </div>
+        <div class="part three">
+          <img src="../assets/ActionButtons.png" alt="" />
+          <div class="text">
+            <h1>ActionButtons</h1>
+            <p>
+              ActionButtons merupakan salah satu komponen yang ada pada komponen
+              PhotoCapture.jsx yang menampung tombol-tombol aksi pada photo.
+              salah satunya tombol lihat yang ketika diklik akan menampilkan
+              photo yang sudah terdapat <span>Timestamp</span> tersebut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <h1>Apa manfaatnya?</h1>
+      <div class="part">
+        <img src="../assets/check.png" alt="" />
+        <p>
+          Fitur <span>Timestamp</span> ini memiliki berbagai manfaat untuk
+          kehidupan sehari-hari. Contohnya, kita bisa memanfaatkan fitur ini
+          untuk absen kehadiran kelas saat sekolah sedang melaksanakan
+          pembelajaran jarak. Kita juga bisa menggunakan fitur ini untuk sistem
+          absen petugas sekolah salah satunya caraka.
+        </p>
+      </div>
+    </section>
+    <section id="conclusion">
+      <h1>Apa Kesimpulannya?</h1>
+
+      <h3>
+        <span>Timestamp</span> adalah fitur yang mampu melacak lokasi alamat dan
+        tanggal waktu saat user melakukan foto yang diprogram meggunakan library
+        <span>React</span> yang ditampung pada komponen PhotoCapture.jsx. Fitur
+        <span>Timestamp</span> ini memiliki berbagai manfaat untuk kehidupan
+        sehari-hari. Contohnya, kita bisa memanfaatkan fitur ini untuk absen
+        kehadiran kelas saat sekolah sedang melaksanakan pembelajaran jarak.
+        Kita juga bisa menggunakan fitur ini untuk sistem absen petugas sekolah
+        salah satunya caraka.
+      </h3>
+    </section>
+    <footer>
+      <h1>Fitur <span>Timestamp</span> - Project Caraka</h1>
+      <nav>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#conclusion">Conslusion</a></li>
+      </nav>
+      <p>&copy; Arfa Banyu Santoro</p>
+    </footer>
+  </body>
+</html>
