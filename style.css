@@ -73,7 +73,7 @@ header {
     aspect-ratio: 1/1;
     object-fit: contain;
   }
-  [src="../assets/hero.jpeg"] {
+  [src="assets/hero.jpeg"] {
     width: 80%;
     transform: rotate3d(1, 2, 3, -10deg) translateX(3rem);
     -webkit-transform: rotate3d(1, 2, 3, -10deg) translateX(3rem);
@@ -83,7 +83,7 @@ header {
     animation: slide 30s linear infinite;
     -webkit-animation: slide 30s linear infinite;
   }
-  [src="../assets/blob-hero.svg"] {
+  [src="assets/blob-hero.svg"] {
     position: absolute;
     top: 0;
     animation: rotate 10s linear infinite;
